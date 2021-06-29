@@ -2,7 +2,7 @@
 
 function WriteMessage()
 {
-    Write-Host "Stay Hungry, Stay Foolish!" -ForegroundColor  Green
+    Write-Host "Stay $([char]27)[4mHungry$([char]27)[24m, Stay $([char]27)[4mFoolish$([char]27)[24m!" -ForegroundColor Green
 }
 WriteMessage
 
