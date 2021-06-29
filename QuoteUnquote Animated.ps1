@@ -21,7 +21,7 @@ function ProcessingAnimation($scriptBlock) {
         while($jobName.JobStateInfo.State -eq "Running") {
             $frame = $frames[$counter % $frames.Length]
             
-            Write-Host "$frame" -NoNewLine
+            Write-Host "$frame" -NoNewLine -ForegroundColor Green
             [Console]::SetCursorPosition(0, $cursorTop)
             
             $counter += 1
